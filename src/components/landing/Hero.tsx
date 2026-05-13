@@ -57,7 +57,6 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
             {[
-              { l: "Apenas 500 vagas", c: "var(--brand-purple-glow)" },
               { l: "Acesso antecipado", c: "var(--brand-green)" },
               { l: "Desconto exclusivo", c: "var(--cta-yellow)" },
             ].map((t) => (
