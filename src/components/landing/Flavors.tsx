@@ -26,31 +26,15 @@ function FlavorBottle({ color, label }: { color: string; label: string }) {
   );
 }
 
+import mysteryBottle from "@/assets/bottle-mystery.png";
+
 function MysteryFlavorBottle() {
   return (
-    <svg viewBox="0 0 160 320" className="h-64 drop-shadow-[0_25px_45px_rgba(168,85,247,0.5)]">
-      <defs>
-        <linearGradient id="g-mystery" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#1F0F38" />
-          <stop offset="100%" stopColor="#3B1466" />
-        </linearGradient>
-      </defs>
-      <rect x="58" y="6" width="44" height="28" rx="4" fill="#A855F7" />
-      <path d="M64 34 L96 34 L94 60 L66 60 Z" fill="#150B26" />
-      <path
-        d="M36 70 Q36 62 50 62 L110 62 Q124 62 124 70 L124 290 Q124 308 106 308 L54 308 Q36 308 36 290 Z"
-        fill="url(#g-mystery)"
-        stroke="rgba(168,85,247,0.6)"
-        strokeWidth="1.5"
-      />
-      <rect x="46" y="130" width="68" height="120" rx="6" fill="#fafafa" opacity="0.95" />
-      <text x="80" y="170" textAnchor="middle" fontFamily="Archivo Black" fontSize="9" fill="#0A0612" letterSpacing="1.5">
-        NO.WAY
-      </text>
-      <text x="80" y="220" textAnchor="middle" fontFamily="Archivo Black" fontSize="32" fill="#7C3AED">
-        ???
-      </text>
-    </svg>
+    <img
+      src={mysteryBottle}
+      alt="Novo sabor misterioso no.way Fresh+Protein"
+      className="h-64 w-auto object-contain drop-shadow-[0_25px_45px_rgba(168,85,247,0.5)]"
+    />
   );
 }
 
