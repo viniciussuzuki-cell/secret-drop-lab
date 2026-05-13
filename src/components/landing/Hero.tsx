@@ -16,18 +16,16 @@ export function Hero() {
           </span>
 
           <h1 className="mt-6 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-            A <span className="text-gradient-brand">no.way</span> vai lançar
-            <br />
-            um <span className="italic text-[var(--brand-purple-glow)]">novo sabor.</span>
+            Imagina tomar um suco e estar tomando{" "}
+            <span className="text-gradient-brand">20g de proteína.</span>
           </h1>
 
           <p className="mt-6 text-2xl font-semibold text-white/90 sm:text-3xl">
-            Você pode ser um dos primeiros a provar.
+            Esse suco existe — e tem um <span className="italic text-[var(--brand-purple-glow)]">novo sabor</span> chegando.
           </p>
 
           <p className="mt-4 max-w-lg text-base text-muted-foreground sm:text-lg">
-            Suco proteico com 20g de proteína, sem leite, leve como suco. Entre na lista VIP e
-            receba acesso antecipado e preço exclusivo de lançamento.
+            Faça parte disso entrando na nossa comunidade e tenha acesso antecipado e condições exclusivas!
           </p>
 
           <div className="mt-8">
