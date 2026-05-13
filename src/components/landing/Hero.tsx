@@ -37,13 +37,13 @@ export function Hero() {
 
           <div className="mt-5 flex flex-wrap gap-3">
             <a
-              href="#vip"
+              href="https://chat.whatsapp.com/ItDpqYhuNNS4VgxwHSa8LI?mode=gi_t" target="_blank" rel="noopener noreferrer"
               className="pill inline-flex items-center gap-2 bg-[var(--cta-yellow)] px-7 py-4 text-base font-bold text-[#0A0612] transition-all hover:scale-[1.03] hover:shadow-[var(--shadow-glow-yellow)]"
             >
               Quero entrar na lista VIP →
             </a>
             <a
-              href="#vip"
+              href="https://chat.whatsapp.com/ItDpqYhuNNS4VgxwHSa8LI?mode=gi_t" target="_blank" rel="noopener noreferrer"
               className="pill inline-flex items-center gap-2 bg-[var(--whatsapp)] px-7 py-4 text-base font-bold text-white transition-all hover:scale-[1.03] hover:shadow-[var(--shadow-glow-green)]"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
