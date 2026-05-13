@@ -70,7 +70,7 @@ export function SocialProof() {
   return (
     <section className="relative px-5 py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="reveal grid gap-10 sm:grid-cols-3">
+        <div className="reveal grid gap-10 sm:grid-cols-2">
           {stats.map((s, i) => (
             <Stat key={s.l} s={s} idx={i} />
           ))}
