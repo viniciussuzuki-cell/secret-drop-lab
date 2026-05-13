@@ -15,27 +15,27 @@ export function Hero() {
             Vagas Limitadas
           </span>
 
-          <h1 className="mt-6 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mt-4 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
             Imagina tomar um suco e estar tomando{" "}
             <span className="text-gradient-brand">20g de proteína.</span>
           </h1>
 
-          <p className="mt-6 text-2xl font-semibold text-white/90 sm:text-3xl">
+          <p className="mt-4 text-2xl font-semibold text-white/90 sm:text-3xl">
             Esse suco existe — e tem um <span className="italic text-[var(--brand-purple-glow)]">novo sabor</span> chegando.
           </p>
 
-          <p className="mt-4 max-w-lg text-base text-muted-foreground sm:text-lg">
+          <p className="mt-3 max-w-lg text-base text-muted-foreground sm:text-lg">
             Faça parte disso entrando na nossa comunidade e tenha acesso antecipado e condições exclusivas!
           </p>
 
-          <div className="mt-8">
-            <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
+          <div className="mt-5">
+            <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
               O lançamento começa em
             </p>
             <Countdown />
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-wrap gap-3">
             <a
               href="#vip"
               className="pill inline-flex items-center gap-2 bg-[var(--cta-yellow)] px-7 py-4 text-base font-bold text-[#0A0612] transition-all hover:scale-[1.03] hover:shadow-[var(--shadow-glow-yellow)]"
@@ -53,7 +53,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
             {[
               { l: "Acesso antecipado", c: "var(--brand-green)" },
               { l: "Desconto exclusivo", c: "var(--cta-yellow)" },
