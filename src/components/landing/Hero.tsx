@@ -3,7 +3,7 @@ import { Countdown } from "./Countdown";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-5 pt-12 pb-24 sm:pt-20">
+    <section className="relative overflow-hidden px-5 pt-4 pb-24 sm:pt-8">
       <div
         className="pointer-events-none absolute -top-20 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full opacity-50"
         style={{ background: "radial-gradient(circle, rgba(168,85,247,0.35), transparent 60%)" }}
