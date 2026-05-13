@@ -1,32 +1,19 @@
+import laranjaBottle from "@/assets/bottle-laranja.png";
+import pinkBottle from "@/assets/bottle-pink.jpg";
+import mysteryBottle from "@/assets/bottle-mystery.png";
+
 const pills = ["20g proteína", "Sem leite", "Sem lactose", "Sem açúcar", "300ml", "Pronto pra beber"];
 
-function FlavorBottle({ color, label }: { color: string; label: string }) {
+function FlavorPhoto({ src, alt, glow }: { src: string; alt: string; glow: string }) {
   return (
-    <svg viewBox="0 0 160 320" className="h-56 drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]">
-      <defs>
-        <linearGradient id={`g-${label}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={color} stopOpacity="0.95" />
-          <stop offset="100%" stopColor={color} stopOpacity="0.7" />
-        </linearGradient>
-      </defs>
-      <rect x="58" y="6" width="44" height="28" rx="4" fill="#0A0612" />
-      <path d="M64 34 L96 34 L94 60 L66 60 Z" fill="#150B26" />
-      <path
-        d="M36 70 Q36 62 50 62 L110 62 Q124 62 124 70 L124 290 Q124 308 106 308 L54 308 Q36 308 36 290 Z"
-        fill={`url(#g-${label})`}
-      />
-      <rect x="46" y="130" width="68" height="120" rx="6" fill="#fafafa" opacity="0.95" />
-      <text x="80" y="170" textAnchor="middle" fontFamily="Archivo Black" fontSize="9" fill="#0A0612" letterSpacing="1.5">
-        NO.WAY
-      </text>
-      <text x="80" y="210" textAnchor="middle" fontFamily="Archivo Black" fontSize="11" fill={color}>
-        {label}
-      </text>
-    </svg>
+    <img
+      src={src}
+      alt={alt}
+      className="h-64 w-auto object-contain"
+      style={{ filter: `drop-shadow(0 25px 45px ${glow})` }}
+    />
   );
 }
-
-import mysteryBottle from "@/assets/bottle-mystery.png";
 
 function MysteryFlavorBottle() {
   return (
@@ -60,7 +47,7 @@ export function Flavors() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           <div className="reveal glass flex flex-col items-center rounded-3xl p-8 text-center">
-            <FlavorBottle color="#FF8A1F" label="LARANJA" />
+            <FlavorPhoto src={laranjaBottle} alt="no.way Fresh+Protein sabor Laranja" glow="rgba(255,138,31,0.45)" />
             <h3 className="mt-6 text-xl font-bold text-white">Laranja</h3>
             <p className="mt-1 text-sm text-muted-foreground">Refrescante e cítrico</p>
           </div>
@@ -84,7 +71,7 @@ export function Flavors() {
           </div>
 
           <div className="reveal glass flex flex-col items-center rounded-3xl p-8 text-center">
-            <FlavorBottle color="#E91E63" label="PINK" />
+            <FlavorPhoto src={pinkBottle} alt="no.way Fresh+Protein sabor Pink Lemonade" glow="rgba(233,30,99,0.45)" />
             <h3 className="mt-6 text-xl font-bold text-white">Pink Lemonade</h3>
             <p className="mt-1 text-sm text-muted-foreground">Doce, ácido e vibrante</p>
           </div>
