@@ -28,7 +28,7 @@ export function CtaReveal() {
             href="https://chat.whatsapp.com/ItDpqYhuNNS4VgxwHSa8LI?mode=gi_t" target="_blank" rel="noopener noreferrer"
             className="pill mt-8 inline-flex items-center gap-2 bg-[var(--cta-yellow)] px-8 py-4 text-base font-bold text-[#0A0612] transition-all hover:scale-[1.04] hover:shadow-[var(--shadow-glow-yellow)]"
           >
-            Garantir minha vaga →
+            Entrar no grupo →
           </a>
         </div>
       </div>
