@@ -47,7 +47,7 @@ export function Flavors() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           <div className="reveal glass flex flex-col items-center rounded-3xl p-8 text-center">
-            <FlavorBottle color="#FF8A1F" label="LARANJA" />
+            <FlavorPhoto src={laranjaBottle} alt="no.way Fresh+Protein sabor Laranja" glow="rgba(255,138,31,0.45)" />
             <h3 className="mt-6 text-xl font-bold text-white">Laranja</h3>
             <p className="mt-1 text-sm text-muted-foreground">Refrescante e cítrico</p>
           </div>
@@ -71,7 +71,7 @@ export function Flavors() {
           </div>
 
           <div className="reveal glass flex flex-col items-center rounded-3xl p-8 text-center">
-            <FlavorBottle color="#E91E63" label="PINK" />
+            <FlavorPhoto src={pinkBottle} alt="no.way Fresh+Protein sabor Pink Lemonade" glow="rgba(233,30,99,0.45)" />
             <h3 className="mt-6 text-xl font-bold text-white">Pink Lemonade</h3>
             <p className="mt-1 text-sm text-muted-foreground">Doce, ácido e vibrante</p>
           </div>
