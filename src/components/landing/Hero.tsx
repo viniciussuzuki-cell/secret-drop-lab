@@ -15,7 +15,7 @@ export function Hero() {
             Vagas Limitadas
           </span>
 
-          <h1 className="mt-4 text-5xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Imagina tomar um suco e estar tomando{" "}
             <span className="text-gradient-brand">20g de proteína.</span>
           </h1>
