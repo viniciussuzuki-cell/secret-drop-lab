@@ -21,7 +21,6 @@ function useCountUp(target: number, start: boolean) {
 const stats = [
   { v: 120000, suf: "+", l: "Garrafas vendidas" },
   { v: 4.9, suf: "/5", l: "Avaliação média", decimal: true },
-  { v: 98, suf: "%", l: "Recomprariam" },
 ];
 
 const testimonials = [
