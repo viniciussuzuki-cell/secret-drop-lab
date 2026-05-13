@@ -21,7 +21,6 @@ function useCountUp(target: number, start: boolean) {
 const stats = [
   { v: 120000, suf: "+", l: "Garrafas vendidas" },
   { v: 4.9, suf: "/5", l: "Avaliação média", decimal: true },
-  { v: 98, suf: "%", l: "Recomprariam" },
 ];
 
 const testimonials = [
@@ -71,7 +70,7 @@ export function SocialProof() {
   return (
     <section className="relative px-5 py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="reveal grid gap-10 sm:grid-cols-3">
+        <div className="reveal grid gap-10 sm:grid-cols-2">
           {stats.map((s, i) => (
             <Stat key={s.l} s={s} idx={i} />
           ))}
