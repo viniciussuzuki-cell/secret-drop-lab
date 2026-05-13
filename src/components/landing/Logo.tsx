@@ -1,8 +1,13 @@
-export function Logo({ className = "" }: { className?: string }) {
+import logoHorizontal from "@/assets/logo.png";
+import logoStacked from "@/assets/logo-stacked.png";
+
+export function Logo({ className = "", variant = "horizontal" }: { className?: string; variant?: "horizontal" | "stacked" }) {
+  const src = variant === "stacked" ? logoStacked : logoHorizontal;
   return (
-    <span className={`font-display text-2xl tracking-tight ${className}`} style={{ fontFamily: "var(--font-display)" }}>
-      <span style={{ color: "var(--brand-green)" }}>no</span>
-      <span className="text-foreground">.way</span>
-    </span>
+    <img
+      src={src}
+      alt="no.way Fresh+Protein"
+      className={`${variant === "stacked" ? "h-16 w-auto" : "h-8 w-auto"} ${className}`}
+    />
   );
 }
