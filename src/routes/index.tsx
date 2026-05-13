@@ -1,26 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { Topbar } from "@/components/landing/Topbar";
+import { Header } from "@/components/landing/Header";
+import { Hero } from "@/components/landing/Hero";
+import { Benefits } from "@/components/landing/Benefits";
+import { Flavors } from "@/components/landing/Flavors";
+import { SocialProof } from "@/components/landing/SocialProof";
+import { CtaReveal } from "@/components/landing/CtaReveal";
+import { LeadForm } from "@/components/landing/LeadForm";
+import { Faq } from "@/components/landing/Faq";
+import { Footer } from "@/components/landing/Footer";
+import { useReveal } from "@/lib/use-reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
+  useReveal();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
+    <div className="min-h-screen text-foreground">
+      <Topbar />
+      <Header />
+      <main>
+        <Hero />
+        <Benefits />
+        <Flavors />
+        <SocialProof />
+        <CtaReveal />
+        <LeadForm />
+        <Faq />
+      </main>
+      <Footer />
+      <Toaster
+        theme="dark"
+        position="top-center"
+        toastOptions={{
+          style: {
+            background: "rgba(20,11,38,0.95)",
+            border: "1px solid rgba(168,85,247,0.4)",
+            color: "white",
+            backdropFilter: "blur(20px)",
+          },
+        }}
       />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
