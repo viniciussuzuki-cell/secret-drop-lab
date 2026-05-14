@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "sonner";
 import { Topbar } from "@/components/landing/Topbar";
 import { Header } from "@/components/landing/Header";
@@ -12,11 +11,7 @@ import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
 import { useReveal } from "@/lib/use-reveal";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   useReveal();
   return (
     <div className="min-h-screen text-foreground">
