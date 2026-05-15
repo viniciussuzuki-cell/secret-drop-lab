@@ -5,7 +5,7 @@ export function Topbar() {
         <span className="relative inline-flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--brand-green)] animate-pulse-dot" />
         </span>
-        <span className="opacity-95">Lançamento Exclusivo • Vagas Limitadas no Acesso Antecipado</span>
+        <span className="opacity-95">Lançamento Exclusivo</span>
       </div>
     </div>
   );
