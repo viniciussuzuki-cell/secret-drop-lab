@@ -17,11 +17,11 @@ export function Hero() {
 
           <h1 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Novo sabor do suco proteico da{" "}
-            <span className="text-gradient-brand">Noway chegando.</span>
+            <span className="text-gradient-brand">Noway está chegando.</span>
           </h1>
 
           <p className="mt-4 text-xl font-semibold text-white/90 sm:text-2xl">
-            Entre no grupo de lançamento e tenha <span className="italic text-[var(--brand-purple-glow)]">desconto exclusivo</span> e acesso antecipado.
+            Entre no grupo de lançamento e garanta o seu <span className="italic text-[var(--brand-purple-glow)]">desconto exclusivo</span> e acesso antecipado.
           </p>
 
           <div className="mt-5">
