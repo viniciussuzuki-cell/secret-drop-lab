@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 
+// Lançamento: 20 de maio de 2026, 09:00 (horário de Brasília, UTC-3)
+const TARGET = new Date("2026-05-20T09:00:00-03:00").getTime();
 function getTarget() {
-  // 14 days from first mount, persisted in memory only
-  const stored = typeof window !== "undefined" ? window.localStorage.getItem("noway_target") : null;
-  if (stored) return parseInt(stored, 10);
-  const t = Date.now() + 14 * 24 * 60 * 60 * 1000;
-  if (typeof window !== "undefined") window.localStorage.setItem("noway_target", String(t));
-  return t;
+  return TARGET;
 }
 
 export function Countdown({ compact = false }: { compact?: boolean }) {
