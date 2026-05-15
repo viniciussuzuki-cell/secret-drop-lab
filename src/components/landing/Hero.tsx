@@ -40,7 +40,18 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["20g proteína", "Sem leite", "Sem lactose", "Sem açúcar", "300ml", "Pronto pra beber"].map((t) => (
+              <span
+                key={t}
+                className="pill inline-flex items-center border border-white/15 bg-white/[0.03] px-4 py-2 text-sm text-white/85"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
             {[
               { l: "Acesso antecipado", c: "var(--brand-green)" },
               { l: "Desconto exclusivo", c: "var(--cta-yellow)" },
