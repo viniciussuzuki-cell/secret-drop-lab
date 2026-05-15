@@ -26,7 +26,8 @@ export function Hero() {
 
           <div className="mt-5">
             <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-              O lançamento começa em
+              O lançamento começa em{" "}
+              <span className="text-[var(--brand-purple-glow)]">20 de maio</span>
             </p>
             <Countdown />
           </div>
