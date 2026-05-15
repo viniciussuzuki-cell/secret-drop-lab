@@ -16,16 +16,12 @@ export function Hero() {
           </span>
 
           <h1 className="mt-4 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Imagina tomar um suco e estar tomando{" "}
-            <span className="text-gradient-brand">20g de proteína.</span>
+            Novo sabor do suco proteico da{" "}
+            <span className="text-gradient-brand">Noway chegando.</span>
           </h1>
 
-          <p className="mt-4 text-2xl font-semibold text-white/90 sm:text-3xl">
-            Esse suco existe — e tem um <span className="italic text-[var(--brand-purple-glow)]">novo sabor</span> chegando.
-          </p>
-
-          <p className="mt-3 max-w-lg text-base text-muted-foreground sm:text-lg">
-            Faça parte disso entrando na nossa comunidade e tenha acesso antecipado e condições exclusivas!
+          <p className="mt-4 text-xl font-semibold text-white/90 sm:text-2xl">
+            Entre no grupo de lançamento e tenha <span className="italic text-[var(--brand-purple-glow)]">desconto exclusivo</span> e acesso antecipado.
           </p>
 
           <div className="mt-5">
