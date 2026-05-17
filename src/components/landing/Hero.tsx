@@ -34,7 +34,7 @@ export function Hero() {
 
           <div className="mt-5 flex flex-wrap gap-3">
             <a
-              href="https://chat.whatsapp.com/ItDpqYhuNNS4VgxwHSa8LI?mode=gi_t" target="_blank" rel="noopener noreferrer"
+              href="https://chat.whatsapp.com/Lrz8izY5X7K5BSn3shXWE1?mode=gi_t" target="_blank" rel="noopener noreferrer"
               className="pill inline-flex items-center gap-2 bg-[var(--cta-yellow)] px-7 py-4 text-base font-bold text-[#0A0612] transition-all hover:scale-[1.03] hover:shadow-[var(--shadow-glow-yellow)]"
             >
               Entrar no grupo →
